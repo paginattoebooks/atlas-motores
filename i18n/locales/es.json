@@ -140,5 +140,7 @@
   "footer.library": "Biblioteca",
   "footer.content": "Contenido",
   "footer.plans": "Planes",
-  "footer.faq": "FAQ"
+  "footer.faq": "FAQ",
+
+  "langSwitch.ariaLabel": "Seleccionar idioma"
 }

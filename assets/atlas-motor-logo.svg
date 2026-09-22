@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" role="img" aria-labelledby="title desc">
+  <title id="title">Atlas Motor</title>
+  <desc id="desc">Monograma técnico AM com o nome Atlas Motor</desc>
+  <g fill="none" stroke="#F3F0E8" stroke-width="2">
+    <path d="M10 48 26 14h8l16 34M17 36h26"/>
+    <path d="m39 14 12 34M58 14h27M72 14v34"/>
+    <path d="M96 14v34h26M96 31h20"/>
+  </g>
+  <text x="137" y="29" fill="#F3F0E8" font-family="Manrope, sans-serif" font-size="17" font-weight="800" letter-spacing="3">ATLAS</text>
+  <text x="138" y="47" fill="#C9AA6A" font-family="Manrope, sans-serif" font-size="11" font-weight="600" letter-spacing="3">MOTOR</text>
+</svg>

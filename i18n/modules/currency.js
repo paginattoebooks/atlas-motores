@@ -2,6 +2,11 @@
 // what visitors *see* — it never touches checkout links or payment amounts.
 export const BASE_CURRENCY = 'USD';
 
+// Acréscimo de 8,76% que a plataforma de pagamento aplica na conversão
+// cambial. Somado uma única vez, depois da conversão, para que o preço
+// exibido fique próximo do valor cobrado no checkout.
+export const CHECKOUT_FX_MARKUP = 1.0876;
+
 const COUNTRY_CURRENCY_MAP = {
   BR: 'BRL',
   US: 'USD', PR: 'USD', EC: 'USD', SV: 'USD',
@@ -40,7 +45,7 @@ export function convertFromUsd(amountUsd, currencyCode, rates) {
   if (!currencyCode || currencyCode === BASE_CURRENCY) return amountUsd;
   const rate = rates && rates[currencyCode];
   if (!rate || typeof rate !== 'number') return null;
-  return amountUsd * rate;
+  return amountUsd * rate * CHECKOUT_FX_MARKUP;
 }
 
 export function formatCurrency(amount, currencyCode, locale) {
